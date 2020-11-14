@@ -16,8 +16,8 @@ data = pd.read_csv("Path to dataset -- csv file",na_values = ['?'], names = ['BI
 
 data.dropna(inplace=True)
 
-all_features = data[['age','shape','margin','density']].values
-all_classes = data['severity'].values
+features = data[['age','shape','margin','density']].values
+classes = data['severity'].values
 feature_names = ['age','shape','margin','density']
 
 scaler = preprocessing.StandardScaler()
